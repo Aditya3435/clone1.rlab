@@ -75,7 +75,8 @@ header img {
     margin: auto;
     max-width: 1000px;
     text-align: left;
-    padding:20px
+    padding:20px;
+    margin-top: 20px;
 }
 
 nav a:hover{
