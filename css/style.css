@@ -9,11 +9,19 @@ body {
   text-align: center;
 }
 
+header {
+  position: relative;
+}
+
 nav {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: fit-content;
-  padding:15px;
+  padding:10px;
   background-color: #f1f1f1;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   margin:auto;
 }
 
@@ -21,17 +29,16 @@ nav a {
   text-decoration: none;
   color: #000;
   text-transform: uppercase;
-  margin-left: 3px;
-  margin-right: 3px;
 }
 
 .name {
   position: absolute;
-  top: 200px;
-  left: 780px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-transform: uppercase;
   color: #fff;
-  font-size: 3em;
+  font-size:3em;
   border: #fff solid 1px;
   width: auto;
   padding: 10px;
@@ -52,56 +59,72 @@ img {
   width: 100%;
   height: auto;
 }
-.photographer img {
+header img {
   max-width: 1500px;
 }
 
 #portfolio img {
   max-width: 1000px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 #contact {
     background-color: #f1f1f1;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
-    padding:20px;
     margin: auto;
     max-width: 1000px;
-    margin-top: 10px;
     text-align: left;
+    padding:20px
 }
 
-nav:hover {
-    
+nav a:hover{
+  background-color: #616161;  
 }
 
 #contact h3 {
     font-weight: 500;
     font-size: 23px;
-    margin: 20px 0;
+    margin: 10px 0;
     text-align: center;
 }
 
 #contact p {
     margin: 20px 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+    word-spacing: 2px;
 }
 
 .inp {
     margin: 20px 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .inp input, button {
     width:100%;
     padding:12px;
     margin-top: 5px;
+    border: #c9c5c5 solid 1px;
 }
 #contact button {
     background-color: #616161;
     color:#fff;
     outline: 0;
+    border:none;
 }
 
+#contact button:hover {
+  background-color: #c9c5c5;
+  cursor: pointer;
+  color: #000;
+}
+
+#contact a:hover {
+  color:rgb(15, 208, 63);
+}
+
+#foot {
+  font-weight: 600;
+}
